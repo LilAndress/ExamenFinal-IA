@@ -25,9 +25,6 @@ proyecto/
 │   ├── labels.jpg
 │   ├── val_batch0_pred.jpg
 │   └── BoxF1_curve.png
-├── templates/
-│   ├── index.html
-│   └── result.html
 ├── data.yaml
 ├── index.py
 ├── prueba.py
