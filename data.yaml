@@ -1,0 +1,13 @@
+train: train/images
+val: train/images
+test: train/images
+
+nc: 2
+names: ['energy_drink', 'phone']
+
+roboflow:
+  workspace: andress-workspace-2bvfq
+  project: object-detection-9v1pm
+  version: dataset
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/andress-workspace-2bvfq/object-detection-9v1pm/dataset/dataset
