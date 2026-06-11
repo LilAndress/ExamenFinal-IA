@@ -31,7 +31,6 @@ proyecto/
 ├── data.yaml
 ├── index.py
 ├── prueba.py
-├── app.py
 ├── requirements.txt
 └── README.md
 ```
@@ -163,17 +162,6 @@ El 3% restante de `energy_drink` corresponde a objetos no detectados (falsos neg
 Los resultados son excelentes considerando el tamaño reducido del dataset. El uso de transfer learning desde `yolov8n.pt` preentrenado en COCO permitió obtener métricas de alto nivel con solo 60 imágenes. El único punto de mejora identificado es la tendencia del modelo a generar algunas falsas detecciones de `phone` sobre el fondo, lo cual se mitiga ajustando el umbral de confianza a `conf=0.6`.
 
 ## Implementación
-
-### Opción A — Aplicación Web con Flask
-
-Aplicación web que permite subir una imagen y visualizar las detecciones del modelo en el navegador.
-
-```bash
-pip install flask
-python app.py
-```
-
-Abrir en el navegador: `http://127.0.0.1:5000`
 
 ### Opción B — Detección en Tiempo Real con OpenCV
 
